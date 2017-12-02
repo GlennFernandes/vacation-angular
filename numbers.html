@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="val"></div>
+<script type="text/javascript">
+    "use strict";
+
+    const div = document.getElementById("val");
+    var text = '';
+    for (var i = 1; i <= 100; i++) {
+      text +=i;
+        if (i % 3 === 0)
+          text +=' Earth' ;
+        if (i % 5 === 0)
+            text +=' Jupiter';
+        if (i % 9 === 0)
+            text +=' Pluto' ;
+        text +="<br>";
+    }
+    div.innerHTML = text;
+
+</script>
+</body>
+</html>
